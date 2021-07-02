@@ -1,4 +1,4 @@
-import os
+#004任一个英文的纯文本文件，统计其中的单词出现的个数#
 import collections
 import re
 
