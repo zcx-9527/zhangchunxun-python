@@ -3,6 +3,7 @@
 def josephus_by_slice(n,m):
     list = [x for x in range(1,n+1)]
     key = m-1
+    print(list)
 #如果n或m等于1.直接返回列表的最后一位
     if n == 1 or m == 1:
         return list[-1]
@@ -21,11 +22,8 @@ def josephus_by_slice(n,m):
         if m > len(list):
             if len(list) == 1:
                 return list[0]
-#当 m>m-len(list)，执行循环语句一直减去len（list）,直到m小于列表长度
-            s = m-len(list)
-            while s > len(list):
-                s-=len(list)
-
+#当 m>m时，取余数
+            s=m%len(list)
             list = list[s:] + list[:s-1]
             print(list)
 
