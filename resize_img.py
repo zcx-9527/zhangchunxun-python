@@ -9,6 +9,7 @@ def resize_img(img_path,size_x,size_y):
              img=cv.imread(os.path.abspath(os.path.join(img_path,dir_path)))
              after_resize_img=cv.resize(img,(300,300))
              cv.imwrite('new'+dir_path,after_resize_img)
-             
 
-resize_img(r"D:\ProgramData\test_img",300,300)
+
+if __name__ == '__main__':
+    resize_img(r"..\test_img",300,300)
