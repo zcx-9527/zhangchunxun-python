@@ -10,5 +10,7 @@ if __name__ == '__main__':
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-    # a='0'
-    # print(a.isdigit())
+
+    # file = None
+    # file_path = file[0]
+    # file_suffix = file_path.split('.', 2)[1]   #后缀名
